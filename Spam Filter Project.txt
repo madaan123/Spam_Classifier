@@ -1,0 +1,20 @@
+Step 1 :- Make a dictionary of words that the computer wishes to know in order to process the emails.
+Extract all the words in a list of words and remove the duplcates and non alphanumeric words
+Enclose all this task into a function
+
+Step 2 :- Prepare the dataset
+We will be using a supervised machine learning model
+We will build a feature vector which is a mathematical way of representing a string.
+Build a feature vector for every email and then append it to the feature set
+Then label the feature vector according to the type of email that it is.
+
+Step 3 :- Training the model with the feature set
+we have used the naives bayes approach for our machine learning model
+from sklearn library import multinomialNB
+we will break our feature set into training and testing set by train and test split function
+we will train our model on training set and then we will measure our accuracy
+To measure the accuracy we will use accuracy_score function from sklearn.metrics
+we will save our machine learning model and then we will test it on the new email that we will enter as raw text
+we will take raw file as input and then convert it into feature vector and then apply our classification process on it.
+We will then be able to predict whether it is spam or not spam
+
